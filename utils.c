@@ -6,7 +6,7 @@
 /*   By: kkeec <krishnakeec@gmail.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/20 14:32:02 by kkeec             #+#    #+#             */
-/*   Updated: 2025/02/20 14:47:43 by kkeec            ###   ########.fr       */
+/*   Updated: 2025/02/27 19:23:51 by kkc              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,23 +61,4 @@ size_t	ft_strlen(char *str)
 	while (str[i])
 		i++;
 	return (i);
-}
-
-void	*ft_memcpy(void *dest, const void *src, size_t n)
-{
-	unsigned char	*dst1;
-	unsigned char	*src1;
-	size_t			i;
-
-	dst1 = (unsigned char *)dest;
-	src1 = (unsigned char *)src;
-	if (!dest || !src)
-		return (NULL);
-	i = 0;
-	while (i < n)
-	{
-		dst1[i] = src1[i];
-		i++;
-	}
-	return (dest);
 }
